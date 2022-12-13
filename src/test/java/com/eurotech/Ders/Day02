@@ -1,0 +1,37 @@
+
+ features ="src/test/resources/features", //Features klasörü
+         glue = "com/eurotech/step_definitions", //step definitions
+
+ dryRun = true, //true yada false calistirabiliriz.
+                    //true'da eksik step olan seneryoyu veriyor. Zaman kaybi olmuyor
+                    //false'da ise hepsini calistirip eksik olanin kodunu veriyor.
+                    //dryRun yazmazsak, false degeri verilmis gibi calisiyor.
+        tags = "@eurotech"
+
+
+        //birden fazla anatations verebiliriz.
+
+ Günlük smoke teste calistiracagimiz senaryolara "@smokeTest" etiketi verirsek
+ sadece onlar calisiyor
+
+ "login.feature" dosyasinda Feature yazisinin üzerine "@Login" gibi bir etiket koyarsak ve
+ "CukesRunner" da tags sekmesinden QLogin etiketinin calistirilmasini istersek bütün
+ seneryolari calistirir.
+
+
+ tags = "@Student and @Tester" bu sekilde bir operatör kullandigimizda Java'daki gibi and
+ mantigi ile calisir ve bir seneryoda her iki tagin da olmasini arar.
+
+ tags = "@Student or @Developer" bu sekilde yazildiginda bu etiketlerden birine sahip
+ bütün senaryolari calistirir. Birden cok "or" kullanilabilir.
+
+ tags = "@Login and not @Tester" tester haric bütün senaryolari calistir.
+ tags = "@Login and not @Tester and not @Student" tester ve Student haric bütün senaryolari calistir.
+
+ @wip   üzerinde calisilan senaryo icin kullaniliyor
+
+ versiyona göre syntax degisebiliyor. Örnegin
+ //Before version 4 ---> {"Login" and "@wip"} seklinde yaziliyordu.
+
+ step_definitions icinde olusturdugumuz "Hooks" classi, TestNG'de @beforeMethod, @AfterMethod
+ taglarini koydugumuz "TestBase" klasi gibi.

@@ -1,0 +1,15 @@
+Features'da senaryolari tanimliyoruz.
+step_definitions da ise bu senaryolara ait stepleri. Yani burasi KOD kismi
+dryRunìn true ve false degerleri var. True derse tanimlanmamis feature'lari arar.
+
+Raporlamam icin open source bir koda ihtiyacimiz var. Bu bbir Plugin. Dependency degil.
+
+dependency yani jar file, kütüphane
+
+Raporlama icin ayar olarak
+Yan taraftaki Maven menüsünden --Lifecycle-- verify'a iki tikla
+
+3 clasi utilities'e kopyaladik
+1. Browser utils testNG sildik
+
+@wip ; work in progress

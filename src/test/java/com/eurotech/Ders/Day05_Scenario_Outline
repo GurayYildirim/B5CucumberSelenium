@@ -1,0 +1,8 @@
+***DDT  ayni test icinde farkli datalarin kullanimi
+***TestNG'de Test datayi disaridan aliyorduk. excel saqyfasibda 9 kisinin bilgileri vardi ve
+test 9 kere döndü.
+
+Sayfayi durdurmak icin iki yöntem var
+FN+F8
+
+Senaryo Outline: ayni stepleri kullanarak farkli datalari test etmemize yariyordu.

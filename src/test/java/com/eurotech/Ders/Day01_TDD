@@ -1,0 +1,53 @@
+Burada Kaldim:
+Video   :2
+Time    :01.43.00
+
+
+TTD :Test Driven Development
+    Developer, Unit testleri yapar ve temel kodlarin (kücük kod parcalari ile) testlerini yapip
+    projeyi olusturulmasi anlayisidir.
+
+    1. Start
+    2. Write a test
+    3. Write kod
+    4. Clean code
+    5. Iterate      (Yenilemek, tekrarlamak)
+
+ bunun 5 Stebi var
+
+ Sadece depeloper biliyor, projenin nasil yapacagina karar veriyor.
+
+ BDD
+ Three Amigos : Product Owner, Developer, Tester (QI)
+ --------------------------------
+ Gherkin Language dedigimizde anlamamiz gereken budur:
+ Given      Baslangic Noktasi
+ When       Aktion
+ Then       Assortion
+ And
+ But
+ Birer tane given when ve then ile bitirebiliyorsaniz bu clean code'a uygundur.
+ Bu kolay test yapisi güclü bir isbirligi saglar.
+
+ ----------------------------------
+ Plugins yüklemek icin
+ File--Settings--Plugins--Marketplace--Burada aranacak plugins
+ 1. Cucumber for Java
+ 2. Gherkin (Görkün)
+ 3.
+ File--new Projekt--Maven(Meevin) Language:Java, Build System:Maven--groupId: com.eurotech
+ Name:B5CucumberSelenium
+ dependency ekleyecegiz.
+ Ikisi TestNG'de vardi
+ 3. sü ise "Cucumber IO" Maven Repository'den arandi
+ a. Cucumber JVM:Java (io olacak)
+ b. Cucumber JVM:UNit (io olacak)
+ ikisinde de ayni versiyon olacak 7.4.0 kursta secilen
+ -------------------------
+
+ 01.14.00 de kaldi
+ 02.46.00 basla
+ Senaryoyu CukesRunner icinden calistiriyoruz.
+ Ayni zamanda login.feature icinden de calistirabiliriz. Burada senaryoyu calistirirsak
+ sadece o senaryo calisir. fature'dan calistirirsak bütün seneryolar calisir.
+ Yazdigiiz yeni senaryoda When yapisinin üstüne gelirsek ona step ekleyebiliriz
